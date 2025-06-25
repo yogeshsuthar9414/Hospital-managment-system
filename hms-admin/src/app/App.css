@@ -1,0 +1,116 @@
+/* // user Profile */
+
+.avatar-upload {
+  position: relative;
+  max-width: 150px;
+  margin: 0px auto;
+}
+
+.avatar-upload .avatar-edit {
+  right: 0;
+  z-index: 1;
+  top: 0;
+}
+
+.avatar-upload .avatar-edit input,
+.avatar-upload .add-section input,
+.avatar-upload .add-section label {
+  display: none;
+}
+
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-50);
+  color: var(--whiteColor);
+}
+
+.avatar-upload .avatar-edit input + label:after {
+  color: #757575;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.page-mt-84 {
+  margin-top: 84px;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-checkbox-checked
+  .ant-checkbox-inner {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-checkbox-wrapper:not(
+    .ant-checkbox-wrapper-disabled
+  ):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled)
+  .ant-checkbox-inner,
+:where(.css-dev-only-do-not-override-1x0dypw).ant-checkbox:not(
+    .ant-checkbox-disabled
+  ):hover
+  .ant-checkbox-inner {
+  border-color: var(--primary);
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-checkbox-checked:not(
+    .ant-checkbox-disabled
+  ):hover
+  .ant-checkbox-inner,
+:where(.css-dev-only-do-not-override-1x0dypw).ant-checkbox-wrapper:not(
+    .ant-checkbox-wrapper-disabled
+  ):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled)
+  .ant-checkbox-inner {
+  background: var(--primary-75);
+  border-color: transparent !important;
+}
+
+/* Button */
+
+.success-btn,
+.success-btn:active {
+  background-color: var(--success) !important;
+  border-color: var(--success) !important;
+  color: white !important;
+}
+
+.success-btn:hover {
+  background-color: var(--success-75) !important;
+  border-color: var(--success-75) !important;
+}
+
+.workorder-collase {
+  @apply border rounded;
+
+  .ant-collapse-expand-icon {
+    @apply !hidden;
+  }
+
+  .ant-collapse-header-text {
+    @apply text-base font-semibold;
+  }
+}
+
+.checklist-dropdown-icons {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

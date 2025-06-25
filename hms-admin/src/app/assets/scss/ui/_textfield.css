@@ -1,0 +1,154 @@
+.textfield .container {
+  @apply flex justify-center items-center p-0;
+}
+.textfield .material-textfield {
+  @apply relative;
+}
+.textfield label {
+  @apply absolute text-sm -translate-y-2/4 bg-[--card] text-[hsl(0,0%,50%)] transition-[0.3s] duration-[ease-out] origin-[left_top] pointer-events-none mx-2 my-0 px-[0.3rem] py-0 left-0 top-2/4;
+}
+.textfield .form-control {
+  @apply border text-[#0f0f12bf] rounded-[5px] border-solid border-[#dee2e6] focus:shadow-none;
+  outline: none;
+}
+.textfield input:focus {
+  @apply border-[--primary];
+}
+.textfield input:focus + label {
+  @apply text-[--primary] -translate-y-2/4 text-[13px] scale-90 top-0;
+}
+.textfield input:not(:placeholder-shown) + label {
+  @apply -translate-y-2/4 scale-90 left-0 top-0;
+}
+.textfield input:not(:focus)::placeholder {
+  @apply opacity-0;
+}
+.textfield .paddingforIcon {
+  @apply !pl-10;
+}
+.textfield .paddingforIcon-sm {
+  @apply pl-9;
+}
+.textfield .form-sm {
+  @apply text-sm px-2.5 py-[7px];
+}
+.textfield .form-normal {
+  @apply text-base px-2.5 py-[13px];
+}
+.textfield .form-icon {
+  @apply absolute flex items-center left-3.5 inset-y-0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+.input-sm-label {
+  @apply text-sm !left-[1.5rem] top-[7px];
+}
+.input-md-label {
+  @apply translate-y-0 left-7 top-3;
+}
+.textfield input:focus + .input-md-label {
+  @apply left-0;
+}
+.textfield input:focus + .input-sm-label {
+  @apply left-0;
+}
+
+/* TextArea */
+.textfield textarea:focus {
+  @apply border-[--primary];
+}
+.textfield textarea:focus + label {
+  @apply text-[--primary] -translate-y-2/4 text-[13px] scale-90 top-0;
+}
+.textfield textarea:not(:placeholder-shown) + label {
+  @apply -translate-y-2/4 scale-90 left-0 top-0;
+}
+.textfield textarea:not(:focus)::placeholder {
+  @apply opacity-0;
+}
+.textArea label {
+  @apply absolute text-base -translate-y-2/4 bg-transparent text-slate-500 transition-[0.3s] duration-[ease-out] origin-[left_top] pointer-events-none mx-2 my-0 px-[0.3rem] py-0 left-0 top-[19%];
+}
+
+.css-1dimb5e-singleValue,
+.css-tc6ssi-placeholder {
+  /* // font-size: 0.875rem !important; */
+  @apply text-sm;
+}
+
+.css-13cymwt-control {
+  border-color: #dee2e6 !important;
+  min-height: 37px !important;
+  height: 3px !important;
+  border-radius: 6px !important;
+}
+
+.css-t3ipsp-control {
+  border-color: var(--primary) !important;
+  box-shadow: none !important;
+  min-height: 37px !important;
+  height: 3px !important;
+  border-radius: 6px !important;
+}
+
+.css-t3ipsp-control .css-nzshro-placeholder {
+  @apply text-[--primary];
+}
+
+.css-1u9des2-indicatorSeparator {
+  display: none !important;
+}
+
+.css-d7l1ni-option {
+  background-color: var(--light-20) !important;
+}
+
+.css-tr4s17-option {
+  background-color: var(--primary) !important;
+}
+
+.required .css-j47ahr-placeholder::after,
+.required .css-nzshro-placeholder::after,
+.textfield .required::after {
+  content: "*";
+  color: var(--danger);
+  margin-left: 2px;
+}
+
+.error-msg {
+  @apply text-[--danger] text-xs;
+}
+
+.ant-picker {
+  width: 100%;
+}
+
+.ant-picker-large {
+  padding: 5.5px 0.625rem;
+}
+
+.date-label {
+  @apply -translate-y-2/4 scale-90;
+  top: 0 !important;
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-picker-outlined:focus,
+:where(.css-dev-only-do-not-override-f7vrd6).ant-picker-outlined:focus-within {
+  border-color: var(--primary) !important;
+  box-shadow: none !important;
+}
+
+:where(.css-dev-only-do-not-override-f7vrd6).ant-picker-outlined:hover {
+  border-color: #dee2e6 !important;
+  box-shadow: none !important;
+}
+
+.textarea label {
+  top: 19px;
+}
+
+.dropdown-menu:hover {
+  @apply !bg-[@f5f5f5];
+}

@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@layer base {
+  :root {
+    --background: #f1f1f1;
+    --foreground: #020917;
+
+    --card: #ffffff;
+    --card-foreground: 222#020917;
+
+    --popover: #fff;
+    --popover-foreground: #020917;
+
+    --primary: #385cee;
+    --primary-hover: #6780e5 !important;
+    --primary-75: #385cee75 !important;
+    --primary-50: #385cee50 !important;
+    --primary-20: #385cee20 !important;
+    --primary-foreground: #f8fafc;
+
+    --success: #50c793;
+    --success-50: #50c79350;
+    --success-75: #50c79375;
+    --danger: #f1595c;
+    --danger-50: #f1595c50;
+    --waring: #ef7d1f;
+    --waring-50: #ef7d1f50;
+
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f1729;
+
+    --muted: #f1f5f9;
+    --muted-foreground: #637288;
+
+    --accent: #f1f5f9;
+    --accent-foreground: #0f1729;
+
+    --destructive: #ef4343;
+    --destructive-foreground: #f8fafc;
+
+    --border: #f1f5f9;
+    --input: #637288;
+    --ring: #ef7d1f;
+
+    --radius: 0.5rem;
+
+    --dark: #1f2937 !important;
+    --light: #5e6c80 !important;
+    --light-50: #5e6c8050 !important;
+    --light-20: #5e6c8020 !important;
+  }
+}
+
+@layer base {
+  body {
+    /* @apply bg-[--background] text-[--foreground]; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  a:hover {
+    color: var(--primary) !important;
+  }
+}
+
+/* @layer components {
+  @import "./app/assets/scss/sidebar";
+  @import "./app/assets/scss/header";
+  @import "./app/assets/scss/ui/textfield";
+} */
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-solid {
+  background: var(--primary);
+}
+
+.ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):active {
+  background: var(--primary) !important;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-solid:not(
+    :disabled
+  ):not(.ant-btn-disabled):hover {
+  background: var(--primary-hover);
+}
+
+.ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):active {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-outlined:not(
+    :disabled
+  ):not(.ant-btn-disabled):hover {
+  color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-tabs-top
+  > .ant-tabs-nav::before {
+  @apply border-slate-300;
+}
+
+.ant-tabs-nav-wrap,
+.ant-tabs-content-holder {
+  @apply mx-3;
+}
+
+.ant-tabs-tab-btn {
+  @apply flex items-center;
+}
+
+.ant-steps-item-content {
+  margin-top: 4px !important;
+}
+
+.ant-steps-item-title {
+  font-size: 13px !important;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-steps
+  .ant-steps-item-process
+  .ant-steps-item-icon {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-steps .ant-steps-item-title {
+  line-height: 20px !important;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-link {
+  color: var(--primary);
+}
+
+table tbody td,
+table tbody th,
+table tbody td div {
+  text-wrap: nowrap;
+}
+
+.info-alert {
+  background-color: var(--primary-20);
+  color: var(--primary);
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+.other-hover:hover {
+  background-color: var(--primary-20);
+}
+
+.other-hover:hover div {
+  color: var(--primary) !important;
+}
+
+.ant-card-body {
+  padding: 10px !important;
+  overflow: hidden;
+}
+
+.ant-card-bordered {
+  border-bottom: 3px solid var(--primary) !important;
+}
+
+.skeletop-w-100 .ant-skeleton {
+  @apply !w-full;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
