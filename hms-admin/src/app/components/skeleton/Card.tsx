@@ -21,7 +21,7 @@ export const CardSkl = () => {
 
                     <span className={`absolute px-2 py-1 top-[15px] left-[15px]`}>
                         <Skeleton.Button active={true} size={"small"} shape={"round"} />
-                    </span>
+                    </span> 
                 </Card>
             </div>
         </React.Fragment>
