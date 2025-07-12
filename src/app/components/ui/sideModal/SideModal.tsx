@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect, useRef } from "react";
-import { Button } from "antd";
+// import { Button } from "antd";
 import { Xmark } from "iconoir-react";
 
 interface sideformsectionProps {
@@ -91,7 +91,8 @@ export const SideModal: React.FC<sideformsectionProps> = ({
           <div className={`font-semibold text-lg text-[var(--dark)] ${backButton ? "flex items-center gap-2" : ""} `}>{backButton} {name}</div>
           <div className="ml-auto flex items-center gap-3">
             {EditionalBtn && <EditionalBtn />}
-            <Button icon={<Xmark />} onClick={() => setIsOpen(!isOpen)} />
+            {/* <Button icon={<Xmark />} onClick={() => setIsOpen(!isOpen)} /> */}
+            <div onClick={() => setIsOpen(!isOpen)} ><Xmark /></div>
           </div>
         </div>
         {children}

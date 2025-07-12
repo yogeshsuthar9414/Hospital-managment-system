@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { handleisSidebar, handleDarkmode } from "../../redux/layout";
 import { AlignLeft, SunLight, HalfMoon, Mail, BellNotification, Plus, Search } from "iconoir-react";
 // import Profile from "./Profile";
-import { Button, Input } from "antd";
+// import { Button, Input } from "antd";
 import "../../assets/scss/_header.css";
 
 export const Header = () => {
@@ -55,12 +55,12 @@ export const Header = () => {
 
         <div className="header-right">
           <div>
-            <Input placeholder="Seach" className="!rounded-full h-[35px]" prefix={<Search className="text-xs" />} />
+            {/* <Input placeholder="Seach" className="!rounded-full h-[35px]" prefix={<Search className="text-xs" />} /> */}
           </div>
-
+          {/* 
           <Button type="primary" shape="circle" className="h-[35px] w-[35px]">
             <Plus className="text-xs" />
-          </Button>
+          </Button> */}
           <div
             className="Dark-icon"
             onClick={() => dispatch(handleDarkmode(!isdark))}

@@ -4,7 +4,7 @@ import { Search, NavArrowDown, NavArrowUp } from "iconoir-react";
 // import { Button } from "../../../components/ui/Button";
 // import Checkbox from "../../../components/ui/Checkbox";
 // import Badge from "../../../components/ui/Badge";
-import { Checkbox } from "antd";
+// import { Checkbox } from "antd";
 
 type dataProps = {
     data?: any;
@@ -135,7 +135,7 @@ export const Datatable: React.FC<dataProps> = ({
                                     <tr className="bg-zinc-100 rounded-md">
                                         {checkbox && (
                                             <th className="w-[53px] p-3">
-                                                <Checkbox checked={selectData?.length === sortedData.length} onChange={(e: any) => handleSelectAllClick(e)} />
+                                                {/* <Checkbox checked={selectData?.length === sortedData.length} onChange={(e: any) => handleSelectAllClick(e)} /> */}
                                             </th>
                                         )}
                                         {columns.map((column: any, index: number) => {
@@ -170,13 +170,13 @@ export const Datatable: React.FC<dataProps> = ({
                                                 {checkbox && (
                                                     <td className="p-3">
                                                         <div className="rowCheck text-center">
-                                                            <Checkbox
+                                                            {/* <Checkbox
                                                                 checked={isItemSelected}
                                                                 value={isItemSelected}
                                                                 onChange={(event: any) => {
                                                                     handleClick(event, row.id);
                                                                 }}
-                                                            />
+                                                            /> */}
                                                         </div>
                                                     </td>
                                                 )}

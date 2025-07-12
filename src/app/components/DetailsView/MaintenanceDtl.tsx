@@ -1,4 +1,4 @@
-import { Avatar, Collapse, Tabs } from 'antd'
+// import { Avatar, Collapse, Tabs } from 'antd'
 import { ArrowLeft, Clock, User } from 'iconoir-react'
 import React from 'react'
 import WorkOrderList from '../listView/WorkOrderList';
@@ -35,7 +35,7 @@ const MaintenanceDtl: React.FC<MaintenanceDtlProps> = ({ isShowDtl, setIsShowDtl
                 <div className='grid md:grid-cols-2 grid-cols-1 mt-6 gap-2'>
                     <div className='md:flex items-center justify-center'>
                         <div className='flex items-center gap-3'>
-                            <Avatar shape="square" size={30} icon={<Clock className='text-sm' />} />
+                            {/* <Avatar shape="square" size={30} icon={<Clock className='text-sm' />} /> */}
                             <div>
                                 <div className='text-xs text-[--light]'>Maintenance On</div>
                                 <div className='text-sm text-[--dark]'>10-12-2024 10:00 PM</div>
@@ -44,7 +44,7 @@ const MaintenanceDtl: React.FC<MaintenanceDtlProps> = ({ isShowDtl, setIsShowDtl
                     </div>
                     <div className='md:flex items-center justify-center'>
                         <div className='flex items-center gap-3'>
-                            <Avatar shape="square" size={30} icon={<User className='text-sm' />} />
+                            {/* <Avatar shape="square" size={30} icon={<User className='text-sm' />} /> */}
                             <div>
                                 <div className='text-xs text-[--light]'>Work Order</div>
                                 <div className='text-sm text-[--dark]'>3</div>
@@ -54,7 +54,7 @@ const MaintenanceDtl: React.FC<MaintenanceDtlProps> = ({ isShowDtl, setIsShowDtl
                 </div>
             </div>
 
-            <Tabs
+            {/* <Tabs
                 defaultActiveKey="1"
                 items={[
                     {
@@ -217,7 +217,7 @@ const MaintenanceDtl: React.FC<MaintenanceDtlProps> = ({ isShowDtl, setIsShowDtl
                             <img src={MachineImg} alt='machine' className='w-full h-[200px] rounded-md' />
                         </div>,
                     },
-                ]} />
+                ]} /> */}
 
 
         </div>

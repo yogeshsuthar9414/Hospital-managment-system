@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Avatar from 'antd/es/avatar/avatar';
-import { Tooltip } from 'antd';
+// import Avatar from 'antd/es/avatar/avatar';
+// import { Tooltip } from 'antd';
 
 const Users = [
     {
@@ -20,14 +20,14 @@ const UserList = () => {
         <div>
             {Users.map((items: any) => (
                 <Link to="" key={items} className='p-2 border mb-3 flex items-start gap-3 cursor-pointer'>
-                    <Avatar shape="square" size={30} className='bg-[--primary-50] text-[--primary]' >{items.userNm.charAt(0).toUpperCase()}</Avatar>
+                    {/* <Avatar shape="square" size={30} className='bg-[--primary-50] text-[--primary]' >{items.userNm.charAt(0).toUpperCase()}</Avatar> */}
                     <div>
                         <div className='text-base text-[--dark] font-semibold hover:text-[--primary] hover:underline'>{items.userNm}</div>
                         <div className='text-xs text-[--light]'>{items.userType} / {items.TechnicianType}</div>
                         <div className='text-xs text-[--light]'>Assigned {items.LastAssignWO}</div>
                         <div className='text-xs text-[--light]'>Assigned On {items.AssginOn}</div>
                     </div>
-                    {items.UserStatus === "H" &&
+                    {/* {items.UserStatus === "H" &&
                         <Tooltip title="Heavy Workload">
                             <Avatar shape="square" size={20} className='bg-[--danger-50] text-[--danger] ms-auto' >{items.UserStatus}</Avatar>
                         </Tooltip>
@@ -46,7 +46,7 @@ const UserList = () => {
                         <Tooltip title="Unavailable">
                             <Avatar shape="square" size={20} className='bg-[--secondary-50] text-[--secondary] ms-auto' >{items.UserStatus}</Avatar>
                         </Tooltip>
-                    }
+                    } */}
                 </Link>
             ))}
         </div>

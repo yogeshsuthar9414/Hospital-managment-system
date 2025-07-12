@@ -56,7 +56,7 @@ export const NavMenu: React.FC<any> = ({ menus }) => {
                     </span>
                     <div
                       className="text-sm menu-title text-[var(--dark)] group-hover:text-secondary"
-                      style={{ flexGrow: 1 }}
+                      style={{ flexGrow: 1, fontWeight:"500" }}
                     >
                       {items.title}
                     </div>
@@ -65,7 +65,7 @@ export const NavMenu: React.FC<any> = ({ menus }) => {
               )}
 
               {items.isHeader && !items.child && (
-                <div className="text-xs my-3 text-[var(--dark)]">
+                <div className="text-xs my-3 text-[var(--dark)]" style={{fontWeight:"400"}}>
                   {items.title}
                 </div>
               )}

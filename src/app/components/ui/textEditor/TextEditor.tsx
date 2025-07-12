@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Editor, EditorState, RichUtils, DraftHandleValue, Modifier } from "draft-js";
 import "draft-js/dist/Draft.css";
-import { useDropzone } from "react-dropzone";
-import { Button } from 'antd';
+import { useDropzone } from "react-dropzone"; // ye bhi rkhna
+// import { Button } from 'antd';
 import { Attachment, Bold, Italic, Underline, Xmark } from 'iconoir-react';
-import { stateToHTML } from "draft-js-export-html";
+import { stateToHTML } from "draft-js-export-html"; // ye rkhana thik kya kaam krta h text editor h ok
 
 interface textEditorProps {
     setFieldVal?: any;
@@ -81,11 +81,11 @@ const TextEditor: React.FC<textEditorProps> = ({ setFieldVal, value, name, attac
             </div>
 
             <div className='flex gap-2 mt-2'>
-                <Button onClick={() => toggleInlineStyle("BOLD")} icon={<Bold />} />
-                <Button onClick={() => toggleInlineStyle("ITALIC")} icon={<Italic />} />
-                <Button onClick={() => toggleInlineStyle("UNDERLINE")} icon={<Underline />} />
+                <div onClick={() => toggleInlineStyle("BOLD")}><Bold /></div>
+                <div onClick={() => toggleInlineStyle("ITALIC")}><Italic /></div>
+                <div onClick={() => toggleInlineStyle("UNDERLINE")}><Underline /></div>
                 <input className='visiable-hidden' {...getInputProps()} />
-                <Button onClick={open} icon={<Attachment />} />
+                <div onClick={open}><Attachment /></div>
             </div>
         </div>
     )

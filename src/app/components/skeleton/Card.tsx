@@ -1,11 +1,11 @@
-import { Card, Skeleton } from 'antd'
+// import { Card, Skeleton } from 'antd'
 import React from 'react'
 
 export const CardSkl = () => {
     return (
         <React.Fragment>
             <div className='grid gap-3 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-3 '>
-                <Card className='reletive'>
+                {/* <Card className='reletive'>
                     <div className='skeletop-w-100'>
                         <Skeleton.Image active={true} style={{ width: "100%", height: 200 }} />
                     </div>
@@ -22,7 +22,7 @@ export const CardSkl = () => {
                     <span className={`absolute px-2 py-1 top-[15px] left-[15px]`}>
                         <Skeleton.Button active={true} size={"small"} shape={"round"} />
                     </span> 
-                </Card>
+                </Card> */}
             </div>
         </React.Fragment>
     )

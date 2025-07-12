@@ -1,4 +1,4 @@
-import { Tag } from 'antd'
+// import { Tag } from 'antd'
 import React from 'react'
 
 interface statusProps {
@@ -8,11 +8,11 @@ interface statusProps {
 const Status: React.FC<statusProps> = ({ status }) => {
     return (
         <>
-            {status === "IN" && <Tag color="processing">In-Process</Tag>}
+            {/* {status === "IN" && <Tag color="processing">In-Process</Tag>}
 
             {status === "P" && <Tag color="default">Pending</Tag>}
 
-            {status === "L" && <Tag color="danger">High</Tag>}
+            {status === "L" && <Tag color="danger">High</Tag>} */}
         </>
     )
 }

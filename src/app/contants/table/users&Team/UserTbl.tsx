@@ -1,6 +1,6 @@
 import React from 'react';
 import { Datatable } from '../../../components/ui/datatable/Datatable';
-import { Avatar, Badge, Button, Tag } from 'antd';
+// import { Avatar, Badge, Button, Tag } from 'antd';
 import { Edit, Trash } from 'iconoir-react';
 
 const data = [
@@ -96,13 +96,13 @@ export const UserTbl = ({ setSelectedUser, selectedUser, setIsUserDtl }: any) =>
                             {
                                 child.column.field === 'Username' &&
                                 <div className='flex items-center gap-3'>
-                                    <Badge dot>
+                                    {/* <Badge dot>
                                         {child.row.UserImg ?
                                             <Avatar shape="square" src={child.row.UserImg} />
                                             :
                                             <Avatar shape="square" className='bg-[--primary-50] text-[--primary]' >{child.row.UserName.charAt(0).toUpperCase()}</Avatar>
                                         }
-                                    </Badge>
+                                    </Badge> */}
                                     <div>
                                         <div>{child.row.UserName}</div>
                                         <div className="text-xs text-slate-500">{child.row.Role}</div>
@@ -119,11 +119,11 @@ export const UserTbl = ({ setSelectedUser, selectedUser, setIsUserDtl }: any) =>
                                 child.column.field === "status" && (
                                     <>
                                         <div>
-                                            {child.row.status === "Y" ? (
+                                            {/* {child.row.status === "Y" ? (
                                                 <Tag color="green">Active</Tag>
                                             ) : (
                                                 <Tag color="red">Inactive</Tag>
-                                            )}
+                                            )} */}
                                         </div>
                                     </>
                                 )
@@ -133,10 +133,10 @@ export const UserTbl = ({ setSelectedUser, selectedUser, setIsUserDtl }: any) =>
                                 child.column.field === '' &&
                                 <div className="flex items-center gap-3">
                                     <div className="group">
-                                        <Button type="primary" shape="circle" icon={<Edit className='text-[11px]' />} />
+                                        {/* <Button type="primary" shape="circle" icon={<Edit className='text-[11px]' />} /> */}
                                     </div>
                                     <div className="group">
-                                        <Button type="primary" shape="circle" danger icon={<Trash className='text-[11px]' />} />
+                                        {/* <Button type="primary" shape="circle" danger icon={<Trash className='text-[11px]' />} /> */}
                                     </div>
                                 </div>
                             }

@@ -6,8 +6,8 @@ import { Xmark } from "iconoir-react";
 import { useDispatch } from "react-redux";
 import { handleisSidebar } from "../../redux/layout";
 import { useEffect } from "react";
-import { Button } from "antd";
-import demoLogo from "./../../assets/images/demo_logo.png"
+// import { Button } from "antd";
+import Logo from "../../assets/images/logo.png"
 import "../../assets/scss/_sidebar.css";
 
 export const Sidebar = () => {
@@ -53,19 +53,19 @@ export const Sidebar = () => {
             className="w-full overflow-hidden px-3"
           >
             <img
-              src={demoLogo}
+              src={Logo}
               alt="company Logo"
-              className="w-[100px]"
+              className="w-[160px]"
             />
           </Link>
           {screenWidth <= 875 && (
             <div className="close-menu">
-              <Button
+              <div
                 onClick={() => dispatch(handleisSidebar(!isSidebar))}
                 className="bg-transparent"
               >
                 <Xmark className="text-[var(--dark)]" />
-              </Button>
+              </div>
             </div>
           )}
         </div>
