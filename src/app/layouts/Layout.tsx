@@ -19,7 +19,6 @@ export const Layout = () => {
                     } transition-all duration-300 `}
             >
                 <Header />
-
                 <div className="mt-[70px]">
                     <Outlet />
                 </div>
